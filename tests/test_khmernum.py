@@ -3,7 +3,7 @@ import json
 import os
 import glob
 pygame.init()
-GRID_SIZE = 50
+GRID_SIZE = 100
 DEFAULT_W, DEFAULT_H = 1100, 760
 MIN_W, MIN_H = 980, 720
 PANEL_W = 360
@@ -48,7 +48,7 @@ def ensure_font_folder():
         os.makedirs(FONT_DIR)
 def find_khmer_font():
     ensure_font_folder()
-    preferred = ["NotoSansKhmer-Regular.ttf", "NotoSansKhmer.ttf", "KhmerOS.ttf", "KhmerUI.ttf", "DaunPenh.ttf"]
+    preferred = ["NotoSerifKhmer-Regular.ttf"]
     for filename in preferred:
         path = os.path.join(FONT_DIR, filename)
         if os.path.exists(path):
