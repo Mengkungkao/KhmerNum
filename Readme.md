@@ -87,9 +87,13 @@ python -m unittest discover -s tests
 ```
 KhmerNum/
 ├── khmernum/
+│   ├── font/                 # font folder
+│       └── NotoSerifKhmer-Regular.tff   
 │   ├── __init__.py           # Package initialization
 │   └── app.py                # Main application code
 ├── tests/
+│   ├── font/                 # font folder
+│       └── NotoSerifKhmer-Regular.tff  
 │   ├── __init__.py
 │   └── test_khmernum.py      # Unit tests
 ├── requirements.txt          # Python dependencies
