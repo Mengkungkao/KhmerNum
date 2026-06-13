@@ -8,7 +8,6 @@ A pygame-based interactive application for drawing and identifying Khmer numeral
 - Real-time visual feedback with color-coded pixels
 - Simple keyboard controls for clearing and exiting
 - Pixel pattern printing for analysis
-- Fully packaged as a Python library
 
 ## Requirements
 
@@ -31,25 +30,8 @@ pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```
 
-### From PyPI (once published)
 
-```bash
-pip install khmernum
-```
 
-## Usage
-
-### Run the Application
-
-```bash
-python -m khmernum.app
-```
-
-Or after installing:
-
-```bash
-khmernum
-```
 
 ### Controls
 
@@ -62,55 +44,22 @@ khmernum
 ### Setup Development Environment
 
 ```bash
-git clone https://github.com/mengkungkao/KhmerNum.git
+git clone "link"
 cd KhmerNum
-python -m venv .venv
-.venv\Scripts\activate  # Windows
 pip install -r requirements.txt
-pip install -e .
 ```
 
-### Run Tests
-
-```bash
-python -m pytest tests/
-```
-
-Or use unittest:
-
-```bash
-python -m unittest discover -s tests
-```
 
 ### Project Structure
 
 ```
-KhmerNum/
+Proj/
 ├── khmernum/
-│   ├── font/                 # font folder
-│       └── NotoSerifKhmer-Regular.tff   
-│   ├── __init__.py           # Package initialization
-│   └── app.py                # Main application code
-├── tests/
-│   ├── font/                 # font folder
-│       └── NotoSerifKhmer-Regular.tff  
-│   ├── __init__.py
-│   └── test_khmernum.py      # Unit tests
+│   ├── fonts/                # font
+│   │    └── NotoSerifKhmer-Regular.ttf
+│   └── khmernum.py                # Main application code
 ├── requirements.txt          # Python dependencies
-├── setup.py                  # Setup configuration
-├── pyproject.toml            # Modern Python packaging
 └── README.md                 # This file
-```
-
-## API Reference
-
-### KhmerNumApp
-
-```python
-from khmernum import KhmerNumApp
-
-app = KhmerNumApp(rows=50, cols=50)
-app.run()
 ```
 
 #### Methods
@@ -121,9 +70,6 @@ app.run()
 - `clear_panel()`: Reset all pixels to OFF
 - `run()`: Start the application main loop
 
-## License
-
-MIT License - see LICENSE file for details
 
 ## Author
 
